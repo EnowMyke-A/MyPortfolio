@@ -1,0 +1,100 @@
+.main-testimonial-container {
+	padding-top: 120px;
+}
+
+.main-testimonial-container * {
+	transition: 0.3s;
+}
+
+.client-image {
+	width: 100%;
+}
+
+.client-image-container {
+	width: 55px;
+	height: 55px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 2px solid #d7d7d769;
+}
+
+.main-testimonial-container
+	.service-container.gradient-service-container
+	.client-image-container {
+	border-color: #d7d7d7ac;
+}
+
+.client-identity {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.client-information {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	font-size: 12px;
+}
+
+.main-testimonial-container .service-container {
+	padding: 20px;
+	justify-content: start;
+	min-width: 325px;
+	box-shadow: none;
+	border: 2px solid #d7d7d769;
+	overflow: hidden;
+	gap: 12px;
+	font-size: 14px;
+	height: 240px;
+}
+
+span.client-name {
+	font-size: 16px;
+}
+
+span.client-role {
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--primary-text-color-transparent);
+}
+
+.main-testimonial-container .service-container svg {
+	rotate: 30deg;
+	margin-left: 80%;
+	margin-top: 10px;
+	fill: #d7d7d769;
+	display: block;
+	min-width: 30px;
+	min-height: 30px;
+	width: 30px;
+	height: 30px;
+}
+
+.main-testimonial-container .service-container.gradient-service-container svg {
+	fill: #d7d7d7ac;
+}
+
+.main-testimonial-container .description {
+	padding: 0px;
+}
+
+@media screen and (max-width: 420px){
+
+	::-webkit-scrollbar{
+		display: none;
+		visibility: hidden;
+	}
+
+    .main-testimonial-container .service-block{
+		flex-direction: row;
+		width: max-content;
+	}
+
+	.main-testimonial-container .service-block-container{
+		width: 100%;
+		overflow-x: auto;
+		scrollbar-width: 0;
+		scrollbar-color: transparent;
+	}
+}

@@ -1,0 +1,205 @@
+.my-photo::after,
+body:after,
+body:before,
+.about-me:after {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0, 174, 183, 0.777);
+	box-shadow: 0 0 40px 20px rgba(0, 173, 183, 0.5),
+		/* Inner color */ 0 0 60px 40px rgba(0, 173, 183, 0.4),
+		/* Slightly transparent */ 0 0 80px 60px rgba(0, 173, 183, 0.3),
+		/* More transparent */ 0 0 100px 80px rgba(0, 173, 183, 0.2),
+		/* Even more transparent */ 0 0 120px 100px rgba(0, 173, 183, 0.1); /* Almost fully transparent */
+	border-radius: 50%;
+	backdrop-filter: 10px;
+	z-index: 0;
+	bottom: -20px;
+	left: 30%;
+	transform: translate(-30%, 0);
+	opacity: 0.6;
+}
+
+body:after,
+body:before {
+	top: 40%;
+	bottom: unset;
+	left: -80px;
+	position: fixed;
+}
+
+body::before {
+	right: -40px;
+	left: unset;
+	bottom: -10px;
+	top: unset;
+	opacity: 0.3;
+}
+
+.main-home-container {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	gap: 20px;
+	overflow: hidden;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	position: relative;
+	padding-top: 100px;
+}
+
+.main-home-container * {
+	transition: 0.3s;
+}
+
+.my-information {
+	width: 600px;
+	padding-bottom: 0px;
+}
+
+.my-information h1 {
+	font-size: 50px;
+	font-weight: 900;
+	height: 110px;
+}
+
+.infos-about-me,
+.my-information > span {
+	width: 100%;
+	font-size: 14.5px;
+	color: var(--primary-text-color-transparent);
+}
+
+.infos-about-me {
+	max-width: 450px;
+	letter-spacing: 0.02em;
+	line-height: 1.5em;
+}
+
+.my-photo {
+	position: relative;
+	width: 550px;
+	height: 550px;
+}
+
+.my-photo img {
+	position: absolute;
+	height: 500px;
+	z-index: 3;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.tele-typed {
+	background: var(--primary-gradient-color);
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	position: relative;
+}
+
+@keyframes blink-animation {
+	from {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.tele-typed::after {
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 60px;
+	bottom: 0;
+	right: -15px;
+	background-color: var(--primary-text-color-transparent);
+	animation: blink-animation 0.5s steps(5, start) infinite;
+	-webkit-animation: blink-animation 0.5s steps(5, start) infinite;
+}
+
+#email-part {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	height: 70px;
+	width: 100%;
+	font-size: 16px;
+	padding-left: 8px;
+}
+
+#subscribe-button {
+	height: 100%;
+	text-align: center;
+	width: 100px;
+	font-size: 16px;
+}
+
+.subscribe-form {
+	border: 2.5px solid var(--secondary-text-color);
+	width: max-content;
+	padding: 8px;
+	border-radius: 8px;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	height: 70px;
+	background-color: #93939324;
+	backdrop-filter: blur(10px);
+}
+
+@media screen and (max-width: 1050px) {
+	.my-information h1 {
+		font-size: 46px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.my-information h1 {
+		font-size: 45px;
+		height: 150px;
+	}
+
+	.my-information {
+		width: 100%;
+		padding: 10px;
+	}
+
+	.main-home-container {
+		flex-direction: column;
+		padding-top: 150px;
+		gap: 0;
+	}
+
+	.subscribe-form {
+		width: 100%;
+	}
+
+	.main-home-container .my-photo img {
+		width: 95%;
+		height: fit-content;
+	}
+
+	.my-photo {
+		width: 100%;
+	}
+
+	.tele-typed:after {
+		height: 50px;
+	}
+
+	.my-photo:after {
+		opacity: 0;
+	}
+}
