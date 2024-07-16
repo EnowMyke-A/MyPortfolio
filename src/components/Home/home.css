@@ -191,6 +191,11 @@ body::before {
 		height: fit-content;
 	}
 
+	.about-me .my-photo img{
+        width: fit-content;
+        height: 100%;
+	}
+	
 	.my-photo {
 		width: 100%;
 	}

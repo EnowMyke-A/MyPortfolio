@@ -96,7 +96,7 @@ const NavigationBar = ({isMobileMenuOpen, setMobileMenuOpen}) => {
 					href="#contact">
 					Let's talk
 				</a>
-				<a className="header-buttons primary-button" href="#">
+				<a className="header-buttons primary-button" href="/Resume.pdf">
 					Download CV
 				</a>
 			</div>

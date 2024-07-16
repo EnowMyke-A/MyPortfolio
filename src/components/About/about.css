@@ -1,103 +1,103 @@
 .about-me {
-	flex-direction: row-reverse;
-	padding-top: 50px;
-	gap: 100px;
-	align-items: center;
+  flex-direction: row-reverse;
+  padding-top: 50px;
+  gap: 100px;
+  align-items: center;
 }
 
-.about-me *{
-    transition: 0.3s;
+.about-me * {
+  transition: 0.3s;
 }
 
 .about-me:after {
-	top: unset;
-	left: unset;
-	top: 30%;
-	right: 20%;
-	width: 1px;
-	height: 1px;
-	opacity: 0.1;
+  top: unset;
+  left: unset;
+  top: 30%;
+  right: 20%;
+  width: 1px;
+  height: 1px;
+  opacity: 0.1;
 }
 
 .about-me h1 {
-	color: transparent;
-	background: var(--primary-gradient-color);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	margin: auto;
+  color: transparent;
+  background: var(--primary-gradient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  margin: auto;
 }
 
 .about-me .more-navigation-links {
-	justify-content: start;
-	margin-top: 50px;
-	margin-bottom: 0px;
+  justify-content: start;
+  margin-top: 50px;
+  margin-bottom: 0px;
 }
 
 .about-me .my-photo {
-	overflow: hidden;
-	position: relative;
-	width: 400px;
-	border-radius: 0 0 0 10vw;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+  border-radius: 0 0 0 10vw;
 }
 
 .about-me .my-photo::after {
-	display: none;
+  display: none;
 }
 
 .about-me .my-photo .clipper-container {
-	position: absolute;
-	left: 0;
-	bottom: 0px;
-	width: 80%;
-	height: 70%;
-	background: var(--primary-gradient-color);
-	opacity: 0.5;
-	border-radius: 16px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 80%;
+  height: 70%;
+  background: var(--primary-gradient-color);
+  opacity: 0.5;
+  border-radius: 16px;
 }
 
 .about-me .my-photo .clipper-container:after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	bottom: 20px;
-	width: 100%;
-	height: 50%;
-	background: var(--primary-gradient-color);
-	overflow: hidden;
-	opacity: 0.5;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  height: 50%;
+  background: var(--primary-gradient-color);
+  overflow: hidden;
+  opacity: 0.5;
 }
 
 .about-me .my-photo img {
-	top: unset;
-	margin-top: 20px;
-	z-index: unset;
-	bottom: 0;
+  top: unset;
+  margin-top: 20px;
+  z-index: unset;
+  bottom: 0;
 }
 
-@media screen and (max-width:420px) {
-    .about-me{
-        flex-direction: column;
-        gap: 0;
-      }
-    
-      .about-me .my-information h1{
-        height: 100px;
-        text-align: center;
-        font-size: 40px;
-      }
-    
-      p.infos-about-me{
-        margin: auto;
-      }
-    
-      .about-me .my-photo{
-        width: 95%;
-      }
+@media screen and (max-width: 420px) {
+  .about-me {
+    flex-direction: column;
+    gap: 0;
+  }
 
-      .section-heading{
-        font-size: 40px!important;
-      }
-    
+  .about-me .my-information h1 {
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  p.infos-about-me {
+    margin: auto;
+  }
+
+  .about-me .my-photo {
+    width: 95%;
+    margin-top: 20px;
+  }
+
+  .section-heading {
+    font-size: 40px !important;
+  }
 }

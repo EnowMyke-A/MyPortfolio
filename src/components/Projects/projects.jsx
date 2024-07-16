@@ -20,64 +20,64 @@ const ProjectComponent = () => {
 	}
 
 	const projectList = [
-		{
-			name: "Relief Radar - cross platform disaster management mobile application",
-			image: releifRadar,
-			category: "Mobile Developement",
-			technologies: ["Ionic", "ReactTS", "CSS3", "NodeJS"],
-			repository: "https://gitub.com",
-			live_demo: "https://github.com",
-		},
-		{
-			name: "Soundz - Mobile screen only ecommerce platform for headphones, earbuds, speakers etc",
-			image: SoundZ,
-			category: "Web Developement",
-			technologies: ["HTML5", "CSS3", "VanillaJS", "JSON"],
-			repository: "https://github.com/EnowMyke-A/Soundz",
-			live_demo:
-				"https://soundz-em4u-rngucxtoc-enowmyke944-gmailcom.vercel.app/",
-		},
-		{
-			name: "iStore - An apple niche product platform for showcase and sales",
-			image: iStore,
-			category: "Web Developement",
-			technologies: ["ReactJS", "CSS3", "NodeJS", "MongoDB"],
-			repository: "https://github.com/staruth0/sellerce/tree/Myke",
-			live_demo: "https://user-panel-lac.vercel.app/",
-		},
-		{
-			name: "Devify Music - A modern look and feel music player to play your local songs done with WaveSurfer Library",
-			image: Devify,
-			category: "Web Developement",
-			technologies: ["HTML5", "CSS3", "VanillaJS", "NodeJS", "SQLite"],
-			repository: "https://github.com/EnowMyke-A/Devify",
-			live_demo: "https://github.com",
-		},
-		{
-			name: "My Portfolio - Advertise my serivces, skills and projects using modern web design",
-			image: Portfolio,
-			category: "Web Developement",
-			technologies: ["ReactJS", "CSS3", "JSON"],
-			repository: "https://gitub.com",
-			live_demo: "https://github.com",
-		},
-		{
-			name: "General Ecommerce API - Authentication, Account recovery, Live chat etc",
-			image: EcommerceAPI,
-			category: "API",
-			technologies: [
-				"NodeJS",
-				"ExpressJS",
-				"JWT",
-				"MongoDB",
-				"Socket.io",
-				"Nodemailer",
-			],
-			repository: "https://github.com/EnowMyke-A/Server",
-			live_demo:
-				"https://server-a0cpbg46s-enowmyke944gmailcoms-projects.vercel.app/",
-		},
-	];
+    {
+      name: "Relief Radar - cross platform disaster management mobile application",
+      image: releifRadar,
+      category: "Mobile Developement",
+      technologies: ["Ionic", "ReactTS", "CSS3", "NodeJS"],
+      repository: "https://github.com/JIM440/CEF440-group-22",
+      live_demo: "/simulation.mp4",
+    },
+    {
+      name: "Soundz - Mobile screen only ecommerce platform for headphones, earbuds, speakers etc",
+      image: SoundZ,
+      category: "Web Developement",
+      technologies: ["HTML5", "CSS3", "VanillaJS", "JSON"],
+      repository: "https://github.com/EnowMyke-A/Soundz",
+      live_demo:
+        "https://soundz-em4u-rngucxtoc-enowmyke944-gmailcom.vercel.app/",
+    },
+    {
+      name: "iStore - An apple niche product platform for showcase and sales",
+      image: iStore,
+      category: "Web Developement",
+      technologies: ["ReactJS", "CSS3", "NodeJS", "MongoDB"],
+      repository: "https://github.com/staruth0/sellerce/tree/Myke",
+      live_demo: "https://user-panel-lac.vercel.app/",
+    },
+    {
+      name: "Devify Music - A modern look and feel music player to play your local songs done with WaveSurfer Library",
+      image: Devify,
+      category: "Web Developement",
+      technologies: ["HTML5", "CSS3", "VanillaJS", "NodeJS", "SQLite"],
+      repository: "https://github.com/EnowMyke-A/Devify",
+      live_demo: "https://github.com",
+    },
+    {
+      name: "My Portfolio - Advertise my serivces, skills and projects using modern web design",
+      image: Portfolio,
+      category: "Web Developement",
+      technologies: ["ReactJS", "CSS3", "JSON"],
+      repository: "https://gitub.com",
+      live_demo: "https://github.com",
+    },
+    {
+      name: "General Ecommerce API - Authentication, Account recovery, Live chat etc",
+      image: EcommerceAPI,
+      category: "API",
+      technologies: [
+        "NodeJS",
+        "ExpressJS",
+        "JWT",
+        "MongoDB",
+        "Socket.io",
+        "Nodemailer",
+      ],
+      repository: "https://github.com/EnowMyke-A/Server",
+      live_demo:
+        "https://server-a0cpbg46s-enowmyke944gmailcoms-projects.vercel.app/",
+    },
+  ];
 
 	return (
 		<div className="main-project-container" id="projects" data-aos="fade-up">
